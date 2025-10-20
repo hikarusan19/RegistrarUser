@@ -1,0 +1,208 @@
+/* ===============================
+   PAGE HEADER
+   =============================== */
+.page-header {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.page-header h1 {
+  font-weight: 700;
+  color: #2b3d6b;
+  font-size: 1.8rem;
+  position: relative;
+  display: inline-block;
+}
+.page-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #3556A3;
+  border-radius: 2px;
+}
+.page-subtitle {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-top: 4px;
+  letter-spacing: 0.3px;
+}
+
+/* ===============================
+   SIDEBAR
+   =============================== */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #1e3261 0%, #15294f 100%);
+  color: #fff;
+  transition: all 0.3s ease;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-shadow: 4px 0 12px rgba(0,0,0,0.2);
+}
+
+.sidebar-header {
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.sidebar-header img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.sidebar-header h5 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.sidebar-header small {
+  color: #cfd8f6;
+  font-size: 0.9rem;
+}
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  color: #cfd8f6;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 6px 10px;
+  padding: 10px 14px;
+}
+.sidebar .nav-link i {
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+.sidebar .nav-link:hover i {
+  transform: translateX(3px);
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background: linear-gradient(90deg, #3556A3, #3e68d1);
+  color: #fff;
+}
+.sidebar .user-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px 8px 0 0;
+}
+.sidebar.hidden {
+  margin-left: -260px;
+}
+.main-content {
+  transition: all 0.3s ease;
+}
+.sidebar .dropdown-menu {
+  min-width: 200px;
+  border-radius: 10px;
+  background: #1e3261;
+}
+.sidebar .dropdown-item {
+  color: #cfd8f6;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.sidebar .dropdown-item:hover {
+  background: #3556A3;
+  color: #fff;
+}
+.sidebar .dropdown-item i {
+  font-size: 1rem;
+}
+
+/* ===============================
+   DASHBOARD CARD
+   =============================== */
+.card-box {
+  border-radius: 15px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.card-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.card-box h5 {
+  font-weight: 600;
+  color: #000;
+}
+.card-box h2 {
+  font-size: 2rem;
+  color: #000;
+}
+
+/* ===============================
+   TABLE STYLING
+   =============================== */
+.table {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.table thead th {
+  background-color: #1e3261 !important;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+.table-hover tbody tr:hover {
+  background-color: #f0f4ff;
+  transition: 0.2s ease-in-out;
+}
+
+/* Sorting Icons */
+th.sortable::after {
+  content: '\f0dc'; /* FontAwesome sort icon (fa-sort) */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  margin-left: 8px;
+  opacity: 0.6;
+}
+th.sortable.asc::after {
+  content: '\f0de'; /* fa-sort-up */
+  opacity: 1;
+}
+th.sortable.desc::after {
+  content: '\f0dd'; /* fa-sort-down */
+  opacity: 1;
+}
+
+.badge {
+  font-size: 0.85rem;
+  padding: 0.5em 0.75em;
+  border-radius: 0.5rem;
+}
+
+.card .form-control::placeholder {
+  color: #adb5bd;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: -260px;
+  }
+  .sidebar.show {
+    margin-left: 0;
+    position: fixed;
+    z-index: 1050;
+  }
+}
