@@ -271,7 +271,7 @@ include '../other/connection.php';
     <td>
       <button class="btn btn-primary btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#viewStatusModal">View</button>
 
-      <button class="btn btn-warning btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#editStatusModal">Edit</button>
+      <button class="btn btn-warning btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#editStatusModal">History</button>
     </td>
   </tr>
   <tr>
