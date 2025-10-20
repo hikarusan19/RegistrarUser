@@ -1,0 +1,501 @@
+/* Page Title Styling */
+/* Page Header (Module Titles) */
+.page-header {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.page-header h1 {
+  font-weight: 700;
+  color: #2b3d6b;
+  font-size: 1.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+/* Clean underline accent */
+.page-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #3556A3;
+  border-radius: 2px;
+}
+
+.page-subtitle {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-top: 4px;
+  letter-spacing: 0.3px;
+}
+
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #1e3261 0%, #15294f 100%);
+  color: #fff;
+  transition: all 0.3s ease;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-shadow: 4px 0 12px rgba(0,0,0,0.2);
+}
+
+/* Sidebar Header / Logo Styling */
+.sidebar-header {
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-header img {
+  width: 90px;              /* ✅ clean size */
+  height: 900px;
+  object-fit: contain;      /* ✅ prevents stretching */
+  border-radius: 50%;       /* ✅ makes it circular */
+  background: #fff;         /* ✅ white circle background for contrast */
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.sidebar-header h5 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.sidebar-header small {
+  color: #cfd8f6;
+  font-size: 0.9rem;
+}
+
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  color: #cfd8f6;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 6px 10px;       /* ✅ Adds space between sidebar items */
+  padding: 10px 14px;     /* ✅ Adds comfortable inner padding */
+}
+
+
+.sidebar .nav-link i {
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.sidebar .nav-link:hover i {
+  transform: translateX(3px);
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background: linear-gradient(90deg, #3556A3, #3e68d1);
+  color: #fff;
+}
+
+.sidebar .user-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px 8px 0 0;
+}
+
+/* Hidden state for toggling */
+.sidebar.hidden {
+  margin-left: -260px;
+}
+
+/* Shadow + smooth transition for main content */
+.main-content {
+  transition: all 0.3s ease;
+}
+
+/* Sidebar user dropdown menu */
+.sidebar .dropdown-menu {
+  min-width: 200px;
+  border-radius: 10px;
+  background: #1e3261;
+}
+
+.sidebar .dropdown-item {
+  color: #cfd8f6;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.sidebar .dropdown-item:hover {
+  background: #3556A3;
+  color: #fff;
+}
+
+.sidebar .dropdown-item i {
+  font-size: 1rem;
+}
+/* Dashboard card styling */
+  .card-box {
+    border-radius: 15px;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .card-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  .card-box h5 {
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .card-box h2 {
+    font-size: 2rem;
+    color: #000000;
+  }
+
+/* Loader Overlay */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 50, 97, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Fade out animation */
+.loader-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: -260px;
+  }
+  .sidebar.show {
+    margin-left: 0;
+    position: fixed;
+    z-index: 1050;
+  }
+}
+
+/* Document Request */
+/* ==========================
+   DOCUMENT REQUEST TABLE
+   ========================== */
+
+.custom-table {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+
+}
+
+.custom-table thead th {
+  background-color: #1e3261 !important;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.95rem;
+  padding: 0.85rem;
+}
+
+.custom-table tbody tr {
+  background: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f0f4ff;
+  transform: scale(1.01);
+}
+
+.custom-table tbody td {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 0.75rem;
+}
+
+/* ===============================
+   BADGES
+   =============================== */
+.badge {
+  font-size: 0.85rem;
+  padding: 0.45em 0.75em;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.badge.bg-success {
+  background-color: #28a745 !important;
+}
+.badge.bg-warning {
+  background-color: #ffc107 !important;
+  color: #212529 !important;
+}
+.badge.bg-danger {
+  background-color: #dc3545 !important;
+}
+.badge.bg-info {
+  background-color: #17a2b8 !important;
+  color: #fff !important;
+}
+
+/* ===============================
+   ACTION BUTTONS
+   =============================== */
+.custom-table .btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.custom-table .btn-primary {
+  background-color: #3556A3;
+  border: none;
+}
+.custom-table .btn-primary:hover {
+  background-color: #2b3d6b;
+}
+
+.custom-table .btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+}
+.custom-table .btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.custom-table .btn-success {
+  background-color: #28a745;
+  border: none;
+}
+.custom-table .btn-success:hover {
+  background-color: #218838;
+}
+
+/* ===============================
+   MODAL STYLING (Add / Update Status)
+   =============================== */
+.modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  background: #1e3261;
+  color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.modal-body {
+  background: #f9fbff;
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  background: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* ===============================
+   FORM ELEMENTS
+   =============================== */
+.form-label {
+  font-weight: 600;
+  color: #1e3261;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0.6rem 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #3556A3;
+  box-shadow: 0 0 0 0.2rem rgba(53, 86, 163, 0.15);
+  outline: none;
+}
+
+/* ===============================
+   ADD NEW STATUS BUTTON
+   =============================== */
+.text-end .btn-success {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.55rem 1.3rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(40, 167, 69, 0.3);
+}
+
+/* ===============================
+   RESPONSIVE TABLE
+   =============================== */
+@media (max-width: 768px) {
+  .custom-table thead {
+    display: none;
+  }
+  .custom-table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+  .custom-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  .custom-table tbody td:last-child {
+    border-bottom: none;
+  }
+  .custom-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #1e3261;
+  }
+}
+/* ===== Timeline Styling for View Modal ===== */
+.timeline {
+  position: relative;
+  margin: 1rem 0;
+  padding-left: 30px;
+  border-left: 3px solid #0d6efd20;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0d6efd;
+  border: 2px solid #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.timeline-content {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  background: #f8f9fa;
+}
+
+.timeline h6 {
+  margin-bottom: 0.3rem;
+}
+
+/* ==============================
+   📊 Generate Report Section
+   ============================== */
+.card .btn {
+  transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.btn-group .btn i {
+  font-size: 1rem;
+}
+
+/* Modal styling */
+.modal-content {
+  border-radius: 1rem;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+/* ==============================
+   🔔 Notifications Section
+   ============================== */
+#notificationModal .list-group-item {
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+#notificationModal .list-group-item:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px);
+}
+
+#notificationModal .badge {
+  font-size: 0.75rem;
+  border-radius: 8px;
+  padding: 0.4em 0.7em;
+}
+
+#notificationModal .modal-content {
+  border-radius: 1rem;
+}
+
+#notificationModal .modal-header {
+  border-bottom: none;
+}
+
+#notificationModal .modal-footer {
+  border-top: none;
+}
