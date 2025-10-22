@@ -76,7 +76,7 @@ $total_faculty        = getCount($conn, "SELECT COUNT(*) AS total FROM departmen
   <!-- User Info Dropdown -->
   <div class="user-box mt-auto p-3 border-top dropdown">
     <div
-      class="d-flex align-items-center justify-content-between dropdown-toggle text-decoration-none text-light"
+      class="d-flex align-items-center justify-content-between text-decoration-none text-light"
       id="userMenu"
       data-bs-toggle="dropdown"
       aria-expanded="false"
@@ -112,7 +112,7 @@ $total_faculty        = getCount($conn, "SELECT COUNT(*) AS total FROM departmen
       </li>
     </ul>
   </div>
-</div>
+
 
 
   <!-- ✅ Main Content Wrapper -->
