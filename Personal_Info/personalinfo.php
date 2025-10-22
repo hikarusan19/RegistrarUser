@@ -47,18 +47,47 @@
         <i class="bi bi-list-columns-reverse me-3"></i> Student Masterlist
       </a>
     </div>
-
-
-    <div class="user-box mt-auto p-3 border-top">
+  <!-- User Info Dropdown -->
+  <div class="user-box mt-auto p-3 border-top dropdown">
+    <div
+      class="d-flex align-items-center justify-content-between text-decoration-none text-light"
+      id="userMenu"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      style="cursor:pointer;"
+    >
       <div class="d-flex align-items-center">
-        <div class="rounded-circle border border-light me-3" style="width:40px;height:40px;background:#ffffff22;"></div>
+        <div class="rounded-circle border border-light me-3"
+             style="width:40px;height:40px;background:#ffffff22;"></div>
         <div>
           <div class="fw-semibold mb-0 text-light">Emmar John</div>
           <span class="small text-light">Staff</span>
         </div>
       </div>
+      <i class="bi bi-chevron-up ms-2 small opacity-75"></i>
     </div>
+
+    <!-- Dropdown Menu -->
+    <ul class="dropdown-menu dropdown-menu-end shadow border-0 mt-2"
+        aria-labelledby="userMenu"
+        style="background:#1f355f;">
+      <li>
+        <a class="dropdown-item text-light py-2" href="profile.php">
+          <i class="bi bi-person-gear me-2"></i> Profile Settings
+        </a>
+      </li>
+      <li>
+        <hr class="dropdown-divider border-light opacity-25">
+      </li>
+      <li>
+        <a class="dropdown-item text-danger py-2" href="logout.php">
+          <i class="bi bi-box-arrow-right me-2"></i> Log Out
+        </a>
+      </li>
+    </ul>
   </div>
+</div>
+
 
   <!-- ✅ Main Content -->
   <div class="main-content" style="margin-left:260px;">
