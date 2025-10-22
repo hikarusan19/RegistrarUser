@@ -56,7 +56,7 @@ include '../other/connection.php';
 
     <!-- User Info Dropdown -->
     <div class="user-box mt-auto p-3 border-top dropdown">
-      <div class="d-flex align-items-center justify-content-between dropdown-toggle text-decoration-none text-light"
+      <div class="d-flex align-items-center justify-content-between text-decoration-none text-light"
            id="userMenu" data-bs-toggle="dropdown" aria-expanded="false" style="cursor:pointer;">
         <div class="d-flex align-items-center">
           <div class="rounded-circle border border-light me-3"
