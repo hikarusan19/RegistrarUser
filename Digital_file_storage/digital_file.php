@@ -22,7 +22,7 @@ include '../other/connection.php';
   <!-- Header -->
   <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
     <div class="d-flex align-items-center">
-      <img src="img\LOGO.png" alt="Logo" class="rounded-circle me-2 border border-light" style="width:50px;height:50px;">
+      <img src="../img\LOGO.png" alt="Logo" class="rounded-circle me-2 border border-light" style="width:50px;height:50px;">
       <div>
         <div class="fw-bold fs-6">Registrar</div>
         <div class="small text-light opacity-75">Student Information System</div>
@@ -57,7 +57,7 @@ include '../other/connection.php';
   <!-- User Info Dropdown -->
   <div class="user-box mt-auto p-3 border-top dropdown">
     <div
-      class="d-flex align-items-center justify-content-between dropdown-toggle text-decoration-none text-light"
+      class="d-flex align-items-center justify-content-between text-decoration-none text-light"
       id="userMenu"
       data-bs-toggle="dropdown"
       aria-expanded="false"
