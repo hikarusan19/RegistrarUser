@@ -8,7 +8,7 @@
   <!-- ✅ Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=1.5 " />
 
 </head>
 
@@ -17,7 +17,7 @@
   <div class="sidebar d-flex flex-column vh-100 position-fixed shadow-lg" id="sidebar">
     <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
       <div class="d-flex align-items-center">
-        <img src="img/LOGO.png" alt="Logo" class="rounded-circle me-2 border border-light" style="width:50px;height:50px;">
+        <img src="../img/LOGO.png" alt="Logo" class="rounded-circle me-2 border border-light" style="width:50px;height:50px;">
         <div>
           <div class="fw-bold fs-6">Registrar</div>
           <div class="small text-light opacity-75">Student Information System</div>
@@ -152,9 +152,9 @@
             </tr>
           </thead>
           <tbody>
+            <tr><td>3</td><td>22019812</td><td>Cañas</td><td>Emmar John</td><td></td><td>BS Information Technology</td><td>4th Year</td><td>41007</td><td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#studentFullInfoModal">View</button></td></tr></td></tr>
             <tr><td>1</td><td>21000001</td><td>Garcia</td><td>Juan</td><td>Dela Cruz</td><td>BS Information Technology</td><td>1st Year</td><td>11002</td><td><button class="btn btn-sm btn-primary">View</button></td></tr>
             <tr><td>2</td><td>21000002</td><td>Santos</td><td>Maria</td><td>Lopez</td><td>BS Criminology</td><td>1st Year</td><td>11002</td><td><button class="btn btn-sm btn-primary">View</button></td></tr>
-            <tr><td>3</td><td>21000003</td><td>Reyes</td><td>Carlos</td><td>Torres</td><td>BS Business Administration</td><td>1st Year</td><td>11002</td><td><button class="btn btn-sm btn-primary">View</button></td></tr>
             <tr><td>4</td><td>21000004</td><td>Fernandez</td><td>Ana</td><td>Gomez</td><td>BS Information Technology</td><td>1st Year</td><td>11002</td><td><button class="btn btn-sm btn-primary">View</button></td></tr>
             <tr><td>5</td><td>21000005</td><td>Delos Santos</td><td>Mark</td><td>Villanueva</td><td>BS Office Administration</td><td>1st Year</td><td>11002</td><td><button class="btn btn-sm btn-primary">View</button></td></tr>
             <tr><td>6</td><td>21000006</td><td>Lopez</td><td>Grace</td><td>Ramos</td><td>BS Criminology</td><td>1st Year</td><td>11002</td><td><button class="btn btn-sm btn-primary">View</button></td></tr>
@@ -167,6 +167,185 @@
       </div>
     </div>
   </div>
+  <!-- 📘 Student Full Information Modal -->
+<div class="modal fade" id="studentFullInfoModal" tabindex="-1" aria-labelledby="studentFullInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content shadow-lg border-0 rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title" id="studentFullInfoModalLabel">
+          <i class="bi bi-person-vcard-fill"></i> Student Full Information
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Personal Information -->
+        <h5 class="text-primary fw-bold mb-3"><i class="bi bi-person-lines-fill"></i> Personal Information</h5>
+        <div class="row g-3 mb-4">
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Student ID</label>
+            <p id="view_student_id">22019812</p>
+          </div>    
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Last Name</label>
+            <p id="view_last_name">Cañas</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">First Name</label>
+            <p id="view_first_name">Emmar John</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Middle Name</label>
+            <p id="view_middle_name">---</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Suffix</label>
+            <p id="view_suffix">---</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Facebook Name</label>
+            <p id="view_fb_name">Emmar John Cañas</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Sex</label>
+            <p id="view_sex">Male</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Civil Status</label>
+            <p id="view_civil_status">Single</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Religion</label>
+            <p id="view_religion">Catholic</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Disability</label>
+            <p id="view_disability">None</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Indigenous</label>
+            <p id="view_indigenous">None</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Birthday</label>
+            <p id="view_birthday">06/20/2003</p>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label fw-bold">Personal Email</label>
+            <p id="view_email">emmarjohncanas1@gmail.com</p>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label fw-bold">Contact Number</label>
+            <p id="view_contact">09334922011</p>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label fw-bold">Address</label>
+            <p id="view_address">60 Bougainvillea St. Brgy. 158 Caloocan City</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Barangay</label>
+            <p id="view_barangay">158</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">City / Municipality</label>
+            <p id="view_city">Caloocan</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Province</label>
+            <p id="view_province">NCR - National Capital Region</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Parent / Guardian Information -->
+        <h5 class="text-primary fw-bold mb-3"><i class="bi bi-people-fill"></i> Parent / Guardian Information</h5>
+        <div class="row g-3 mb-4">
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Guardian Last Name</label>
+            <p id="view_guardian_lname">Aguirre</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Guardian First Name</label>
+            <p id="view_guardian_fname">Erica</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Guardian Middle Name</label>
+            <p id="view_guardian_mname">Cañas</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Guardian Contact</label>
+            <p id="view_guardian_contact">09367467970</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Occupation</label>
+            <p id="view_guardian_occupation">I.T</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Family Information -->
+        <h5 class="text-primary fw-bold mb-3"><i class="bi bi-people"></i> Family Information</h5>
+        <div class="row g-3 mb-4">
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Father's Last Name</label>
+            <p id="view_father_lname">Aguirre</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Father's First Name</label>
+            <p id="view_father_fname">Eric</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Father's Middle Name</label>
+            <p id="view_father_mname">Chua</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Mother's Last Name</label>
+            <p id="view_mother_lname">Cañas</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">(Mother’s) First Name</label>
+            <p id="view_mother_fname">Carmen</p>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-bold">Mother’s Middle Name</label>
+            <p id="view_mother_mname">Morta</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Educational Background -->
+        <h5 class="text-primary fw-bold mb-3"><i class="bi bi-mortarboard-fill"></i> Educational Background</h5>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label fw-bold">Primary School</label>
+            <p id="view_primary_school">Ramon Magsaysay Central Elementary School</p>
+            <p><strong>Year Graduated:</strong> 2017</p>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label fw-bold">Secondary School</label>
+            <p id="view_secondary_school">E. Rodriguez Jr. High School</p>
+            <p><strong>Year Graduated:</strong> 2020</p>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label fw-bold">Last School Attended</label>
+            <p id="view_last_school">Bestlink College of The Philippines</p>
+            <p><strong>Last School Year Attended:</strong> 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          <i class="bi bi-x-circle"></i> Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div id="loader" class="loader-overlay">
     <div class="spinner-border text-light" role="status"></div>
     <p class="text-white mt-3 fw-semibold">Loading, please wait...</p>
