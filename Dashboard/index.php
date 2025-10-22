@@ -72,7 +72,6 @@ $total_faculty        = getCount($conn, "SELECT COUNT(*) AS total FROM departmen
         <i class="bi bi-list-columns-reverse me-3"></i> Student Masterlist
       </a>
     </div>
-
   <!-- User Info Dropdown -->
   <div class="user-box mt-auto p-3 border-top dropdown">
     <div
