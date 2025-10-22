@@ -122,28 +122,35 @@
 .sidebar .dropdown-item i {
   font-size: 1rem;
 }
-
-/* ===============================
-   DASHBOARD CARD
-   =============================== */
-.card-box {
+.modal-content {
   border-radius: 15px;
   border: none;
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
-.card-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+.modal-header {
+  background: #1e3261;
+  color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-.card-box h5 {
+
+.modal-title {
   font-weight: 600;
-  color: #000;
+  font-size: 1.1rem;
 }
-.card-box h2 {
-  font-size: 2rem;
-  color: #000;
+
+.modal-body {
+  background: #f9fbff;
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  background: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /* ===============================
@@ -182,17 +189,6 @@ th.sortable.desc::after {
   content: '\f0dd'; /* fa-sort-down */
   opacity: 1;
 }
-
-.badge {
-  font-size: 0.85rem;
-  padding: 0.5em 0.75em;
-  border-radius: 0.5rem;
-}
-
-.card .form-control::placeholder {
-  color: #adb5bd;
-}
-
 /* ===============================
    RESPONSIVE
    =============================== */
