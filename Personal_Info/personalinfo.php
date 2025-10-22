@@ -17,7 +17,7 @@
   <div class="sidebar d-flex flex-column vh-100 position-fixed shadow-lg" id="sidebar">
     <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
       <div class="d-flex align-items-center">
-        <img src="img/LOGO.png" alt="Logo" class="rounded-circle me-2 border border-light" style="width:50px;height:50px;">
+        <img src="../img/LOGO.png" alt="Logo" class="rounded-circle me-2 border border-light" style="width:50px;height:50px;">
         <div>
           <div class="fw-bold fs-6">Registrar</div>
           <div class="small text-light opacity-75">Student Information System</div>
@@ -47,18 +47,24 @@
         <i class="bi bi-list-columns-reverse me-3"></i> Student Masterlist
       </a>
     </div>
-
-
-    <div class="user-box mt-auto p-3 border-top">
+  <div class="user-box mt-auto p-3 border-top dropdown">
+    <div
+      class="d-flex align-items-center justify-content-between text-decoration-none text-light"
+      id="userMenu"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      style="cursor:pointer;"
+    >
       <div class="d-flex align-items-center">
-        <div class="rounded-circle border border-light me-3" style="width:40px;height:40px;background:#ffffff22;"></div>
+        <div class="rounded-circle border border-light me-3"
+             style="width:40px;height:40px;background:#ffffff22;"></div>
         <div>
           <div class="fw-semibold mb-0 text-light">Emmar John</div>
           <span class="small text-light">Staff</span>
         </div>
       </div>
+      <i class="bi bi-chevron-up ms-2 small opacity-75"></i>
     </div>
-  </div>
 
   <!-- ✅ Main Content -->
   <div class="main-content" style="margin-left:260px;">
